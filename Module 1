@@ -1,0 +1,17 @@
+Module 1: Hello Hackers
+
+1) Intro To Commands
+
+Flag: pwn.college{gt9UrAfe7uV_35-tnx_udEHKHPn.QX3YjM1wSN5EjMyEzW}
+Solution: I typed "hello" in the terminal and got the flag.
+
+2) Intro to Arguments 
+
+Flag: pwn.college{IDUoNYoUjoASlz9hIrYL7i9xlqC.QX4YjM1wSN5EjMyEzW}
+Solution: I typed 'hello hackers' into the temrinal and got the flag
+
+3) Command History 
+
+Flag: pwn.college{YONJDfMAUzK6YFqRMZn5ak4wJRO.0lNzEzNxwSN5EjMyEzW}
+Solution: I opened the GUI desktop environemnt on the pwn college website and hit the up arrow key to get the flag 
+
