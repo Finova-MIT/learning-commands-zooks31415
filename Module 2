@@ -1,0 +1,60 @@
+Module 2 
+
+1) The Root 
+
+Flag: pwn.college{QcpAyTq9heklk5rNm0NKmlwtHLx.QX4cTO0wSN5EjMyEzW}
+Solution: I navigated to the pwn program under the root directory using the absolute path "/pwn" and got the flag
+
+2) Program and absolute paths 
+Flag: pwn.college{g5uQUMSe_yni99Vctp6-bvBOhMh.QX1QTN0wSN5EjMyEzW}
+Solution: I tried "cd /challenge/run" at first to which it told me that run is not a directory, then I tried "cat /challenge/run" to which it told me that the absolute path was not specified,
+I couldn't figure it out so I googled it and then finally  typed "/challenge/run" to get the flag
+
+3) Position thyself 
+Flag: pwn.college{ArWKJlGz_4fypqeAP9GFUexTrC6.QX2QTN0wSN5EjMyEzW}
+Solution: I first typed /challenge/run into the terminal which gave me some error and specified the directory in which the run command was
+then I changed the directory to the specified directory i.e /proc/128/fd and then typed /challenge/run again to get the flag
+
+4) Position elsewhere
+Flag: pwn.college{41WQiCO-5Sr8X3wz1193tFkJUeF.QX3QTN0wSN5EjMyEzW}
+Solution: I followed the same procedure as in the previous challenge
+
+5) Position yet elsewhere 
+FLag: pwn.college{g287rYzzgdZjhHGcraBTMbpvM3E.QX4QTN0wSN5EjMyEzW}
+Solution: I followed the same procedure as in the previous challenge
+
+6) implicit relative paths, from /
+Flag: pwn.college{MNKuIq9flai0QxqIfUNNm-KRwrJ.QX5QTN0wSN5EjMyEzW}
+Solution: I changed directory to root and then typed challenge/run
+
+7) explicit relative paths, from /
+Flag: 6) implicit relative paths, from /
+Solution: I was not able to understand what the question meant at first so I just typed ls to see what /home/hacker contained, curiously it contained a text file called
+flag.txt, I opened it using cat, it gave me a flag but it was not correct flag for that challenge
+then I did this:
+/challenge/././run
+# To which it said the following:
+Incorrect...
+You are not currently in the / directory.
+Please use the `cd` utility to change directory appropriately
+#below is the rest of the lore!  :
+hacker@paths~explicit-relative-paths-from-:~$ cd /
+hacker@paths~explicit-relative-paths-from-:/$ /challenge/././run
+Incorrect...
+You invoked this challenge with an absolute path. This challenge needs a relative path!
+hacker@paths~explicit-relative-paths-from-:/$ challenge/././run
+Incorrect...
+This challenge must be called with a relative path that explicitly starts with a `.`!
+hacker@paths~explicit-relative-paths-from-:/$ ./challenge/././run
+Correct!!!
+./challenge/././run is a relative path, invoked from the right directory!
+
+
+8) implicit relative path
+Flag: pwn.college{0Gdg1XGJI2s5AslIBt-SwwNcDhY.QXxUTN0wSN5EjMyEzW}
+Solution: I cd ed the /challenge directory and then typed ./run to get the flag
+
+9) Home sweet home
+Flag: pwn.college{kvApx7Attbcr2cntac2cMkAEjwl.QXzMDO0wSN5EjMyEzW}
+Solution: I provided the /challenge/run command the argument: ~/~ to get the flag
+
