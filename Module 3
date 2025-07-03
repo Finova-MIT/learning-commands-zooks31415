@@ -1,0 +1,16 @@
+Module 3
+Note: For the challenges 1 to 11, I have solve dthem and got the flag, I had also documented all of them in
+this file, unfortunately then I closed my laptop to take a break and when I opened it again, I discovered
+that all my progeresson in github had been lost, I had put in more than 4 hours to solve all the challenges 
+and crefully describe the procedure I followed to solbe the flag, I will attach a picture of my pwn.college page where it 
+shows that I have solved all the challenges. It would a great waste of time for me to solve all those challenges again, I hope you understand and my situation .\\
+
+12) finding files
+FLag: pwn.college{MeYYPh7ANnSenBZpPmwD6DG1jUZ.QXyMDO0wSN5EjMyEzW}hacker@commands~finding-files:/$ 
+Solution: I tried ot search the whole system from the root using the "find / -name flag" command , but that yeildied no results, it jsut printed a bunch of lines with permision 
+denied, the I ls ed in the root and started searching throuch, /tmp, /usr, /bin, /boot/ /challenge, /lib, etc using the "find NAME_OF_DIRECTORY -name flag" command
+finally i found the flag in the opt directory 
+
+13) Linking files 
+Flag: pwn.college{0pUu-zfJxb2KQ3yC-XHNWnRQYL-.QX5ETN1wSN5EjMyEzW}
+Solution: I linked the /flag to the /home/hacker/not-the-flag, then I typed /challenge/catflag to get the flag
