@@ -1,0 +1,46 @@
+Module 4
+
+1)Learning fomr documentation
+Flag: pwn.college{ktWd-4LSA-Fsv-GfOex_yrRD2X-.QX0ITO0wSN5EjMyEzW}
+Solution: I typed /challenge/challenge --giveflag into the terminal
+
+2) Learning Complex usage 
+Flag: pwn.college{IFK2j9QBU-NivfQj2GUUpNSEzXZ.QX1ITO0wSN5EjMyEzW}
+Solution: I typed /challenge/challenge --printfile /flag into the terminal to get the flag 
+
+3) Reading manuals 
+Flag: pwn.college{0AYG8U7lfe37N2Zeq9FOHga8kWt.QX0EDO0wSN5EjMyEzW}
+Solution: I first accessed the man page for the challnege command which toldd me to use the argument --lfeeqg 087 to with the command /challenge/challenge ot get the flag
+
+4) Searching manuals 
+Flag: pwn.college{AO5GfxT8H4fCoL1j181Kb8zc3R0.QX1EDO0wSN5EjMyEzW}
+Solution I pulled up the man page for the challenge command and searched for the word flag by typing /flag, it gave me the --gtd argument and told me that this will 
+give the flag so I /challenge/challenge --gtd into the terminal to get the flag
+
+5) Searching for manuals 
+Flag: pwn.college{QGLrGK7vyoDOcSelpRRoF0CGHzL.QX2EDO0wSN5EjMyEzW}
+Solution: I read the man page for man by typing "man man" into the terminal after reading quite a lot it showed me how to different arguments that I can use man command 
+with. One listing was "man -k printf" whuch searched for "printf" in all manpages or shortdescriptions of commands, thus I typed man -k challenge , which gave me the name
+of the page ccontaining the description of the /challenge/challenge command and then using the man page and the  proper argument I got the flag.
+
+6) Helpful Progrgrams
+Flag: pwn.college{4zRtUBhj9x4qNFnPE7dMO_yAwy-.QX3IDO0wSN5EjMyEzW}
+Solution: I first typed /challenge/challenge --help to which it gave me a description on how to use the /challenge/challenge command, following the documentation I typed 
+/challenge/challenge -p which gave me a number, I used that number with /challenge/challenge -g The_number to get the flag
+
+7) Help for Builtins
+Flag: pwn.college{kLoSkLjZbhMc8-BVD0QzhI-wGtf.QX0ETO0wSN5EjMyEzW}
+Solution : hacker@man~help-for-builtins:~$ help  challenge
+challenge: challenge [--fortune] [--version] [--secret SECRET]
+    This builtin command will read you the flag, given the right arguments!
+    
+    Options:
+      --fortune		display a fortune
+      --version		display the version
+      --secret VALUE	prints the flag, if VALUE is correct
+
+    You must be sure to provide the right value to --secret. That value
+    is "kLoSkLjZ".
+hacker@man~help-for-builtins:~$ challenge --secret kLoSkLjZ
+Correct! Here is your flag!
+pwn.college{kLoSkLjZbhMc8-BVD0QzhI-wGtf.QX0ETO0wSN5EjMyEzW}
