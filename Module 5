@@ -15,3 +15,13 @@ Solution: I typed /challenge/files$ /challenge/run file_[absh] into the terminal
 4) Matching paths with []
 Flag: /challenge/run /challenge/files/file_[absh]
 Solution: I typed /challenge/run /challenge/files/file_[absh] to get the flag
+
+5) Multiple globs 
+Flag: pwn.college{YAFOxDfEanyf8wkSNO_GiV71c1U.0lM3kjNxwSN5EjMyEzW}
+Solution: I first cd ed into the /challenge/files directory and then typed /challenge/files$ /challenge/run *p* to get the flag
+
+6) Mixing globs 
+Flag: 
+Solution: 
+
+
