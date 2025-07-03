@@ -1,0 +1,17 @@
+Module 5
+
+1) Matching with *
+Flag: pwn.college{sUme_iDhVxCne3GLYEwnGmnLbx5.QXxIDO0wSN5EjMyEzW}
+Solution: I typed "cd /ch*"  which changed my directory to /challenge and then ran /challenge/run to get the flag
+
+2) Matching with ?
+Flag: pwn.college{oFHHYeAJ27oy25vq-lybqUxfxO6.QXyIDO0wSN5EjMyEzW}
+Solution: I typed cd /?ha??enge into the terminal to change my  directory to /challenge and then typed /challenge/run to get the flag
+
+3) Matching with []
+FLag: pwn.college{808Cer_vREv087ADgOnGNyxM1OQ.QXzIDO0wSN5EjMyEzW}
+Solution: I typed /challenge/files$ /challenge/run file_[absh] into the terminal to get the flag
+
+4) Matching paths with []
+Flag: /challenge/run /challenge/files/file_[absh]
+Solution: I typed /challenge/run /challenge/files/file_[absh] to get the flag
