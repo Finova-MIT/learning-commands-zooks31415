@@ -21,7 +21,26 @@ Flag: pwn.college{YAFOxDfEanyf8wkSNO_GiV71c1U.0lM3kjNxwSN5EjMyEzW}
 Solution: I first cd ed into the /challenge/files directory and then typed /challenge/files$ /challenge/run *p* to get the flag
 
 6) Mixing globs 
-Flag: 
-Solution: 
+Flag: pwn.college{AYiCInDVk3j_I-w3BPK_O5wegoI.QX1IDO0wSN5EjMyEzW}
+Solution: I was not able out figure this one out on my own, I couldnt figure what to pass as argument to /challenge/run  so that it would only glob "pwning, challenging
+and educational" eventually using AI I typed [pce]* as the argument to /challenge/run to get the flag
+
+7) Exclussionaary globbing 
+Flag: pwn.college{ARq-8atATYYPv6N8PCt54yCZg7X.QX2IDO0wSN5EjMyEzW}
+Solution: I passed [^pwn]* as argument to /challenge/run command 
+
+8) Tab completion
+FLag: pwn.college{MLHCOGTg9CWgXalD7-db3zhuMXW.0FN0EzNxwSN5EjMyEzW}
+Solution: I did as told to get the flag
+
+9) Multiple Options for tab completion
+Flag: pwn.college{sMrBSCTCw-ubHJv8KBBH6HCG7xd.0lN0EzNxwSN5EjMyEzW}
+Solution: I typed cat /challenge/files/p and hit tab, this expanded to cat /challenge/files/pwn, then I hit tab twice to get a list of all the options and then I typed of the
+name of the file containing the flag 
+
+10) Tab completion on commands 
+FLag: pwn.college{0hvO-YVVfHZb2XqNoY5ITEt04e8.0VN0EzNxwSN5EjMyEzW}
+Solution: I typed pwncollege and hit tab to autocomplete the command 
+
 
 
