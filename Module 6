@@ -1,0 +1,51 @@
+Module 6
+
+1) Redirecting output 
+Flag: pwn.college{s4RIMiXEpdah3iLLz3-U0GZI0J8.QX0YTN0wSN5EjMyEzW}
+Solution: I typed " echo PWN > COLLEGE " to get the flag
+
+2) Redirecting more output
+FLag: pwn.college{ARVrTiaT4HXZ7eNY10Z4EIDy2ak.QX1YTN0wSN5EjMyEzW}
+Solution: I redirected the output of the command /challenge/run to the file myflag and then cat my flag to get the flag
+
+3) Appending output 
+Flag: pwn.college{UCVrxIN9MonEiL58sXkT1Sly2V3.QX3ATO0wSN5EjMyEzW}
+Solution: I redirected the output of the command /challenge/run to ~/the-flag in append mode and then cat the-flag to get the flag
+
+4) Redirecting errors 
+Flag: pwn.college{0LhDN5-gJossFG0Gtgvu2ESBljh.QX3YTN0wSN5EjMyEzW}
+Solution: I typed /challenge/run > myflag 2> instructions to get the flag
+
+5) Redirecting Input 
+Flag: pwn.college{MQD2KgD6xCbW0ti0y0HvYW6OVC1.QXwcTN0wSN5EjMyEzW}
+Solution: I typed echo COLLEGE > PWN and then /challenge/run < PWN to get the flag
+
+6) Grepping stored Results 
+Flag: pwn.college{kkjGvcIGed0sEdIBG2aRAuM6bVo.QX4EDO0wSN5EjMyEzW}
+Solution: I first redirected the output of /challenge/run to /tmp/data.txt then I typed "grep pwn.college /tmp/data.txt" to gte the flag
+
+7) Grepping live output 
+Flag: pwn.college{UeQMgw8Ap_OH3LJm8kwqwHS-3Pr.QX5EDO0wSN5EjMyEzW}
+Solution: I typed /challenge/run | grep pwn.college into the terminal to get the flag
+
+8) Grepping errors
+Flag: /challenge/run 2>& 1 | grep pwn.college
+Solution: I typed /challenge/run 2>& 1 | grep pwn.college to get the flag
+
+9) Filtering with grep -v
+FLag: pwn.college{IALGhKI9gzFXFteS_DyRPtV10zT.0FOxEzNxwSN5EjMyEzW}
+Solution: I typed "/challenge/run | grep -v DECOY" to get the flag
+
+10) Duplicating piped data with tee
+Flag: pwn.college{YMzl1gVBxxMDnFikEIUNafjWHxd.QXxITO0wSN5EjMyEzW}
+Solution :  I first typed  /challenge/pwn | tee what.txt |/challenge/college into the terminal, then I cat what.txt to the get the correct usage of the /challnege/pwn command 
+and got and then I used it correctly to get the flag
+
+11) Writing to multiple programs 
+Flag: pwn.college{8kB9XkK5Tuk32yrjAE_nhQygroS.QXwgDN1wSN5EjMyEzW}
+Solution: I typed /challenge/hack | tee >(/challenge/the) | /challenge/planet to get the flag
+
+12) Split pipping sterr and stdout 
+Flag: pwn.college{gN0OBX8jiC7mKI83NkQUfiWZPmP.QXxQDM2wSN5EjMyEzW}
+Solution : I struggled a little bit at first but then recalled how I had earlier redirected the 
+
