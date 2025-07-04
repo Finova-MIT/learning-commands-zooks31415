@@ -47,5 +47,6 @@ Solution: I typed /challenge/hack | tee >(/challenge/the) | /challenge/planet to
 
 12) Split pipping sterr and stdout 
 Flag: pwn.college{gN0OBX8jiC7mKI83NkQUfiWZPmP.QXxQDM2wSN5EjMyEzW}
-Solution : I struggled a little bit at first but then recalled how I had earlier redirected the 
+Solution : I struggled a little bit at first but then recalled how I had earlier redirected the stderr and the stdout of a command into two seperate files in a single line.
+Using the same logic and Process substitution to make command act as files I got the flag 
 
